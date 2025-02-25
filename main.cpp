@@ -1,3 +1,9 @@
-#include "main.h"
+#include <QApplication>
+#include "billsplitter.h"
 
-main::main() {}
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+    BillSplitter window;
+    window.show();
+    return app.exec();
+}
